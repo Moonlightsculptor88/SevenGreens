@@ -100,9 +100,9 @@ var loader = document.getElementById("preloader");
 
 window.addEventListener("load", ()=>{
     setInterval(()=>{
-        loader.style.opacity = "0";
+        
     }, 3000)
-    
+    loader.style.opacity = "0";
 })
 
 
