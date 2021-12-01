@@ -78,7 +78,6 @@ links.forEach((button)=>{
     fullBody.style.filter = "blur(5px)";
     setTimeout(     ()=>{
         fullBody.style.filter = "blur(0px)";
-
     }, 500);
     setTimeout( ()=>{
         loaderChildren[0].classList.remove("box-1ani");
@@ -103,7 +102,27 @@ window.addEventListener("load", ()=>{
         
     }, 3000)
     loader.style.opacity = "0";
-})
+});
 
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
 
 
