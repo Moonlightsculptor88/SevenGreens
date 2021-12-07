@@ -149,6 +149,30 @@ html {
     /* animation: glitch 500ms infinite; */
 }
 
+.main-body h2{
+    font-size: 20vmin;
+    position: absolute;
+    right: -60px;
+    transform: rotate(90deg);
+    animation: wiggleh2 2s infinite;
+    color: #00CC6D;
+}
+.main-body h2:hover{
+    animation-play-state: paused;
+}
+
+@keyframes wiggleh2 {
+    0%{
+    transform: rotate(88deg);
+    }
+    50%{
+    transform: rotate(92deg);
+    }
+    100%{
+    transform: rotate(88deg);
+    }
+}
+
 
 
 
@@ -173,12 +197,12 @@ h1 span:last-child{
     height: 98%;
     min-width: 400px;
     background-color: #00ff88;
-    padding: 50px 0 0 0;
+    padding: 10% 0 0 0;
     position: absolute;
     z-index: 1;
     opacity: 0.8;
     top: 0px;
-    left: 50%;
+    left: 55%;
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
     display: flex;
@@ -205,13 +229,11 @@ h1 span:last-child{
 .img-box img{
     height: 500px;
     opacity: 0.8;
-    max-width: 100%;
-
 }
 
 .next-wrapper{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background-color: #00CC6D;
     bottom: 50%;
     position: absolute;
@@ -260,7 +282,7 @@ h1 span:last-child{
 
 @keyframes bob {
     50%{
-        transform: scale(0.8);
+        transform: scale(1.2);
     }
 }
 
@@ -352,22 +374,25 @@ div.cursor div{
   
 .second h1{
     font-size: 20vmin;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     color: #00CC6D;
     animation: wiggle 2s  infinite;
 }
 
+.second h1:hover{
+    animation-play-state: paused;
+}
+
 @keyframes wiggle {
     0%{
-    transform: rotate(88deg);
+    transform: rotate(268deg);
     }
     50%{
-    transform: rotate(92deg);
+    transform: rotate(272deg);
     }
     100%{
-    transform: rotate(88deg);
+    transform: rotate(268deg);
     }
-    
 }
 
 
